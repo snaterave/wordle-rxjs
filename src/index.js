@@ -1,6 +1,7 @@
 import { fromEvent, Subject, merge } from 'rxjs';
 import { map, filter, takeUntil } from 'rxjs/operators';
 import WORD_LIST from './wordList.json';
+import '@styles/main.css';
 
 // DOM elements
 const letterRows = document.getElementsByClassName("letter-row");
