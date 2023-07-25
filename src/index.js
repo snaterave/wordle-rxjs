@@ -2,8 +2,13 @@ import { fromEvent, Subject, merge } from 'rxjs';
 import { map, filter, takeUntil } from 'rxjs/operators';
 import WORD_LIST from './wordList.json';
 import '@styles/main.css';
+import green from '@images/green-color.png';
+import yellow from '@images/yellow-color.png';
+
 
 // DOM elements
+document.getElementById('warning').style.backgroundImage=`url(${yellow})`; 
+document.getElementById('success').style.backgroundImage=`url(${green})`; 
 const letterRows = document.getElementsByClassName("letter-row");
 const messageText = document.getElementById('message-text');
 const clue = document.getElementById('message-clue');
@@ -113,7 +118,7 @@ const checkWord = {
 
         // Destapamos la pista
         if(letterRowIndex >= 3){
-            clue.textContent = wordToPlay.clue;
+            clue.textContent = `Pista: ${wordToPlay.clue}`;
         }
 
         if(userAnswer.join('') === wordToPlay.word){
@@ -168,6 +173,7 @@ restartBoard$.subscribe(()=>{
     wordToPlay = getRandomWord();
     console.log(wordToPlay.word);
     restartButton.disabled = true;
+    clue.textContent="";
 
     // Subscripciones
     let insertSubscription = insertLetter$.

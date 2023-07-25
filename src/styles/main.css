@@ -16,11 +16,38 @@ body {
   font-family: var(--inter-font);
 }
 
-.web-title {
-  text-align: center;
-  color: white;
+main{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+.principal{
+  display: grid;
+  grid-template-columns: minmax(300px,2fr) 3fr;
+  grid-auto-rows: 400px;
+}
+
+.instructions{
+  align-self: center;
+}
+
+.instructions:first-child{
+  color: cadetblue;
+}
+
+.status{
+  display: grid;
+  grid-template-columns: 50px 3fr;
+  grid-auto-rows: 50px;
+}
+
+.web-title {
+  color: white;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+.prn
 .letters-container {
   display: flex;
   align-items: center;
@@ -109,6 +136,11 @@ body {
   color: var(--gray);
   border: 1px solid var(--gray);
   box-shadow: none;
+}
+
+#warning, #success{
+  height: 30px;
+  width: 30px;
 }
 
 @keyframes scaleLetter {

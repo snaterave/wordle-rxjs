@@ -5,66 +5,102 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- <link rel="stylesheet" href="./styles.css" />-->
-<title>PlatziWordle</title>
-<script defer src="main.3e6217614023f407ef79.js"></script><script defer src="main.edec1dc1b307ecc0f057.js"></script><link href="assets/main.2ddac228732ed7d8b878.css" rel="stylesheet"></head>
+<title>Wordle - Improved</title>
 <body>
 <h1 class="web-title">Wordle (Improved)</h1>
-<div class="letters-container">
-<div class="letter-row">
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-</div>
-<div class="letter-row">
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-</div>
-<div class="letter-row">
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-</div>
-<div class="letter-row">
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-</div>
-<div class="letter-row">
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-</div>
-<div class="letter-row">
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-<div class="letter"></div>
-</div>
-</div>
+<main>
+    <section class="principal">
+        <div class="instructions">
+            <div>
+                <h3>
+                    Instrucctions
+                </h3>
+                <div>
+                    <p>
+                        The main idea is discover the word in six tries. All the words have five letters, if you don't
+                        discover the word in the third tried, you will have a clue to help you.
+                    </p>
+                    <p>
+                        Remember, you only have six tries to discover the word. </br>
+                        <b>GOOD LUCK !! </b>
+                    </p>
+                    
+                </div>
+                <div class="status">
+                    <div id="warning">
+                    </div>
+                    <div>
+                        The letter exists but is not in the correct position.
+                    </div>
+                    <div id="success">
+                    </div>
+                    <div>
+                        The letter exists and is in the correct position.
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+        <div class="game">
+            <div class="letters-container">
+                <div class="letter-row">
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                </div>
+                <div class="letter-row">
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                </div>
+                <div class="letter-row">
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                </div>
+                <div class="letter-row">
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                </div>
+                <div class="letter-row">
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                </div>
+                <div class="letter-row">
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                </div>
+            </div>
 
-<div class="message-container">
-    <p id="message-text" class="message-text"></p>
-</div>
-<div class="message-container">
-    <p id="message-clue" class="message-text"></p>
-</div>
+            <div class="message-container">
+                <p id="message-text" class="message-text"></p>
+            </div>
+            <div class="message-container">
+                <p id="message-clue" class="message-text"></p>
+            </div>
+            
+            <div class="restart-container">
+                <button class="restart-button" id="restart-button"> Reiniciar</button>
+            </div>
+        </div>
 
-<div class="restart-container">
-    <button class="restart-button" id="restart-button"> Reiniciar</button>
-</div>
+    </section>
+</main>
 
-<!--<script src="./bundle.js"></script> -->
 </body>
 </html>
